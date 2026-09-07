@@ -1,0 +1,4 @@
+- [Google Drive video thumbnails](google-drive-video-thumbnails.md) — proxy private video stills; embed them as data URLs before PDF printing.
+- [Google Drive video uploads](google-drive-video-uploads.md) — initiate resumable uploads through the connector, then transfer bytes to Google's session URL.
+- [Mobile cloud-file uploads](mobile-cloud-file-uploads.md) — use Expo's native file uploader for provider-backed document-picker files.
+- [Workspace lockfile review](workspace-lockfile-review.md) — dependency updates can expose stale peer snapshots; keep unrelated lockfile rewrites out of focused changes.

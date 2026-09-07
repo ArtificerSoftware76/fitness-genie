@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Fitness Genie",
+    "slug": "fitness-genie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/fitness-genie-icon-clean.png",
+    "scheme": "fitness-genie",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/fitness-genie-icon-clean.png",
+        "backgroundColor": "#F8F6F1"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/fitness-genie-icon-clean.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-mail-composer",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/fitness-genie-splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

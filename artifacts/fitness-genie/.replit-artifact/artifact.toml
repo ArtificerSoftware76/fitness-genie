@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/fitness-genie/"
+title = "Fitness Genie"
+description = "A mobile fitness coaching app for managing clients and exercises, composing personalized workouts, and sharing polished PDF workout plans with linked exercise videos."
+version = "1.0.0"
+id = "artifacts/fitness-genie"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/fitness-genie/" ]
+localPort = 22794
+
+[services.development]
+run = "pnpm --filter @workspace/fitness-genie run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fitness-genie", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/fitness-genie", "run", "serve" ]
+
+[services.env]
+PORT = "22794"
+BASE_PATH = "/fitness-genie/"
